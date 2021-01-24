@@ -11,9 +11,11 @@ function getWeather(lat, lng) {
 			return response.json();
 		})
 		.then(function (json) {
+			console.log(json);
 			const temperature = json.main.temp;
 			const place = json.name;
-			weather.innerText = `${temperature} @ ${place}`;
+			const tenki = json.weather[0].description;
+			weather.innerText = `${tenki}  ${temperature} @ ${place}`;
 		});
 }
 

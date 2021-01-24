@@ -9,12 +9,11 @@ body {
 h1 {
 	color: rgb(34, 182, 113);
 	font-size: 50px;
+	font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 .clicked {
 	color: #7f8c8d;
 }
-
-
 
 .form,
 .greetings {
@@ -23,8 +22,9 @@ h1 {
 
 .showing {
 	display: block;
-	color:rgb(0, 0, 0);
-	font-size: 40px;
+	color: tomato;
+	font-size: 30px;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 @keyframes fadeIn {
@@ -44,3 +44,44 @@ h1 {
 	height: 100%;
 	z-index: -1;
 	animation: fadeIn 0.5s linear;
+}
+
+.weather {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	font-size: 20px;
+	font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+	color: tomato;
+}
+
+input {
+	text-align: center;
+	margin-top: 40px;
+	font-size: 40px;
+	background: none;
+	border: none;
+	border-bottom: 2px solid rgb(34, 182, 113);
+	width: 400px;
+	height: 50px;
+	color: tomato;
+}
+
+input::placeholder {
+	font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+	color: rgba(255, 99, 71);
+	font-size: 40px;
+}
+input:focus::placeholder {
+	color: transparent;
+}
+
+input:focus {
+	outline: none;
+}
+
+li {
+	font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+	color: rgba(255, 99, 71);
+	font-size: 20px;
+}
